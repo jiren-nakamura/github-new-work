@@ -1,3 +1,4 @@
+
 h1 {
     color: #6594e0;/*文字色*/
     /*線の種類（点線）2px 線色*/
@@ -29,4 +30,21 @@ html body{
 .schoolInformation  h3{
     margin: 0; 
     padding: 0;
+}
+.links{
+    display: flex;
+}
+a{
+    text-decoration: none;
+    padding: 0 10px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 50%, rgb(49, 170, 226) 50%);
+    background-position: 0 0;
+    background-size: 200% auto;
+    transition: .3s;
+    flex: 1;
+}
+
+a:hover{
+background-position: -100% 0;
+color: #fff;
 }
