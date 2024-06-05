@@ -1,0 +1,37 @@
+h1 {
+    color: #6594e0;/*文字色*/
+    /*線の種類（点線）2px 線色*/
+    border-bottom: dashed 2px #6594e0;
+}
+h2 {
+    color: #364e96;/*文字色*/
+    border: solid 3px #364e96;/*線色*/
+    padding: 0.5em;/*文字周りの余白*/
+    border-radius: 0.5em;/*角丸*/
+}
+h3 {
+    padding: 0.4em 0.5em;/*文字の上下 左右の余白*/
+    color: #494949;/*文字色*/
+    background: #f4f4f4;/*背景色*/
+    border-left: solid 5px #7db4e6;/*左線*/
+    border-bottom: solid 3px #d7d7d7;/*下線*/
+}
+html body{
+    width: 800px;
+    margin:auto;
+}
+
+header {
+    text-align: center;
+}
+
+.schoolInformation {
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    background: #f0f7ff;
+    border: dashed 2px #5b8bd0;/*点線*/
+}
+.schoolInformation  h3{
+    margin: 0; 
+    padding: 0;
+}
