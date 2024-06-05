@@ -1,0 +1,65 @@
+h1 {
+    position: relative;
+    padding: 0.5em;
+    background: #a6d3c8;
+    color: white;
+  }
+  
+  h1::before {
+    position: absolute;
+    content: '';
+    top: 100%;
+    left: 0;
+    border: none;
+    border-bottom: solid 15px transparent;
+    /*order-right: solid 20px rgb(149, 158, 155);*/
+  }
+  .navbar {
+    display: flex;
+    background-color: #a6d3c8;
+    justify-content: space-around;
+  }
+  .navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+  }
+.schools {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px; /* 任意でグリッドの間隔を設定 */
+    width: 60%;
+    margin: auto;
+}
+.school {
+    position: relative;
+    width: 100%;
+    height: 200px; /* 任意の高さに設定 */
+    overflow: hidden;
+}
+.school img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease;
+    object-fit: cover; /* 画像をコンテナにフィットさせる */
+}
+.school .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 1.5em;
+}
+.school:hover .overlay {
+    opacity: 1;
+}

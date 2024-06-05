@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./css/styles.css"> <!-- スタイルシートへのリンク -->
-    <script src="script.js" defer></script> <!-- スクリプトファイルへのリンク -->
 </head>
 <body>
     <header>
@@ -16,11 +15,16 @@
             <h3>自分の所属していたクラス:特になし</h3>
             <h3>その他の紹介：<br>通信校であり人があまりいなかった一人で対面授業の日もしばしばバイク乗ってくる人もいたテストの前にテストと同じ内容のプリントがもらえる</h3>
         </div>
+        <div class="counter-container">
+            <div>クリック回数: <span id="click-count">0</span></div>
+            <button class="counter-button" id="click-button">クリックしてね</button>
+            <button class="reset-button" id="reset-buton">リセット!!</button>
+        </div>
         <div>
             <h2>班員からのコメント</h2>
             <h3>佐田:</h3>
             <h3>中村:私の母校楽しかったけどあんまり登校できてないや</h3>
-            <h3>森:</h3>
+            <h3>森:通信ってどんな授業するのか気になる</h3>
             <h3>可児:通信校も楽しそう。</h3>
         </div>
     </main>
@@ -32,5 +36,17 @@
             <a href="#">可児</a>
         </div>
     </footer>
+    <script>
+        let count = 0;
+
+        document.getElementById('click-button').addEventListener('click', function() {
+            count++;
+            document.getElementById('click-count').textContent = count;
+        });
+        document.getElementById('reset-buton').addEventListener('click', function() {
+            count = 0;
+            document.getElementById('click-count').textContent = count;
+        });
+    </script>
 </body>
 </html>
