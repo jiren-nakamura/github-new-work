@@ -47,6 +47,16 @@
         </div>
         専門学校 岡山情報ビジネス学院（OIC）はJR岡山駅から徒歩2分、高い資格取得実績と就職実績を誇る総合専門学校です。
     </footer>
+    <script>
+        document.querySelectorAll('.school img').forEach(img => {
+            img.addEventListener('mouseover', () => {
+                img.style.transform = 'scale(1.1)';
+            });
+            img.addEventListener('mouseout', () => {
+                img.style.transform = 'scale(1)';
+            });
+        });
+    </script>
     <script src="script.js"></script>
 </body>
 </html>
