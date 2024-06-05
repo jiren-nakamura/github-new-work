@@ -42,6 +42,7 @@ h1 {
 .school img {
     width: 100%;
     height: 100%;
+    transition: transform 0.3s ease;
     object-fit: cover; /* 画像をコンテナにフィットさせる */
 }
 .school .overlay {

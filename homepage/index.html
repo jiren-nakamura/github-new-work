@@ -43,6 +43,16 @@
     <footer>
         <p>&copy; 2024 あなたの名前または会社名</p>
     </footer>
+    <script>
+        document.querySelectorAll('.school img').forEach(img => {
+            img.addEventListener('mouseover', () => {
+                img.style.transform = 'scale(1.1)';
+            });
+            img.addEventListener('mouseout', () => {
+                img.style.transform = 'scale(1)';
+            });
+        });
+    </script>
     <script src="script.js"></script>
 </body>
 </html>
